@@ -6,14 +6,15 @@
     <title>REgistration form</title>
 </head>
 <body>
-    <form id="registrationForm" method="POST" action='/'>
+    <form id="registrationForm" method="POST" onsubmit="return validateForm()" action="/">
         <label>UserName</label>
-        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="username" placeholder="Name" required>
         <label>Email</label>
         <input type="text" id="email" placeholder="Email" required>
-        <label>UserName</label>
+        <label>Password</label>
         <input type="text" id="password" placeholder="Password" required>
-        <button onclick="submit">Register</button>
+        <button type="submit">Register</button>
     </form>
+    <script src="../static/script.js"></script>
 </body>
 </html>
